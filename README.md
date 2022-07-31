@@ -61,12 +61,22 @@ curl http://localhost:8000/getIndicatorInfos
 ```
 To handle corrupt data use the exsiting method
 ```
-curl -L -F "file=@[input_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
+curl -L -F "file=@[input_corrupt_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
 ```
 
-To use the advanced indicators
+# To use the advanced indicators
+Average number of sick for cat (defualt)
 ```
-curl  http://localhost:8000/getAdvIndicatorInfos > indicators_advanced.json
+curl  http://localhost:8000/getAdvIndicatorInfos?species=cat > indicators_advanced.json
 ```
+For pig
+```
+curl  http://localhost:8000/getAdvIndicatorInfos?species=pig
+```
+Others species are same way 
+buffalo
+chicken
+dog
+sheep
 
 
