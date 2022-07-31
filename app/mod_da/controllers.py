@@ -205,7 +205,9 @@ def indicator():
    
 @mod_da.route('/getAdvIndicatorInfos')
 def getAdvIndicator():
+    #species from parameter 
     speciesV = request.args.get('species')
+    # Default species
     if not speciesV:
         speciesV='cat'
 
@@ -214,10 +216,10 @@ def getAdvIndicator():
 
     #Total number of deaths from each disease
     deathDis=db.session.query(DiseaseList.name, func.sum(DataCases.number_mortality)).filter(DataCases.disease_id == DiseaseList.id).group_by(DataCases.disease_id).order_by(DiseaseList.name).all()
-    #Average number of sick cats reported in reports from villages up to two decimal points
+    #Average number of sick species reported in reports from villages up to two decimal points
     avgcatV=db.session.query(0,func.round(func.avg(DataCases.number_morbidity),2)).filter(DataCases.species==speciesV).filter(DataCases.location.ilike('%Village%')).all()
     
-    #Average number of sick cats report to advanced indicator dictionary
+    #Average number of sick species report to advanced indicator dictionary
     #Convert to dictionary
     avgcatVD=dict(avgcatV)
     avgcatVD["Average number of sick "+speciesV+ " reported in reports from villages up to two decimal points"] = avgcatVD.pop(0)
