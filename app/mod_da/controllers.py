@@ -1,6 +1,6 @@
-__author__ = "Mohiuddin Shovon"
-__date__ = "30 th July,2022"
-__email__ = "shovon.du86@gmail.com"
+#author= "Mohiuddin Shovon"
+#date = "30 th July,2022"
+#email = "shovon.du86@gmail.com"
 
 # Import flask dependencies
 import os
