@@ -77,4 +77,13 @@ chicken,
 dog,
 sheep
 
+### Screenshots 
+
+1.Screenshot_Installation.png <br/>
+<img src="https://github.com/shovondu86/da_assignment/blob/main/Screenshot/1.Screenshot_Installation.png" width="400"/><br/>
+2.Screenshot_DiseaseList.png <br/>
+<img src="https://github.com/shovondu86/da_assignment/blob/main/Screenshot/2.Screenshot_DiseaseList.png" width="400"/><br/>
+3.Screenshot_Data_Analysis.png <br/>
+<img src="https://github.com/shovondu86/da_assignment/blob/main/Screenshot/3.Screenshot_Data_Analysis.png" width="400"/>
+
 
