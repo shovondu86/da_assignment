@@ -44,7 +44,7 @@ View the processed data
 curl http://localhost:8000/diseaseListInfos 
 ```
 #### Data case processing and analysis:
-#Total number of reported cases and total number of deaths reported at each location
+### Total number of reported cases and total number of deaths reported at each location
 ```
 curl -L -F "file=@[input_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
 ```
@@ -65,7 +65,7 @@ To handle corrupt data use the exsiting method
 curl -L -F "file=@[input_corrupt_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
 ```
 
-# To use the advanced indicators
+### To use the advanced indicators
 Average number of sick for cat (defualt) from villages and total number of deaths from each disease 
 ```
 curl  http://localhost:8000/getAdvIndicatorInfos?species=cat > indicators_advanced.json
@@ -75,9 +75,9 @@ For pig
 curl  http://localhost:8000/getAdvIndicatorInfos?species=pig
 ```
 Others species are same way 
-buffalo
-chicken
-dog
+buffalo,
+chicken,
+dog,
 sheep
 
 
