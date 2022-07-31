@@ -37,12 +37,9 @@ curl -L -F "file=@[input_disease_CSV_file]" http://localhost:8000/diseaselistloa
 ```
 example
 ```
-curl -L -F "file=@disease_list.csv" http://localhost:8000/diseaselistload > diseaselistjson.json
+curl -L -F "file=@disease_list.csv" http://localhost:8000/diseaselistload 
 ```
-View the processed data
-```
-curl http://localhost:8000/diseaseListInfos 
-```
+
 #### Data case processing and analysis:
 ### Total number of reported cases and total number of deaths reported at each location
 ```
@@ -52,7 +49,7 @@ example
 ```
 curl -L -F "file=@data_cases_2.csv" http://localhost:8000/datacasesload > indicators.json
 ```
-To get the output only
+To get the output only once uploaded
 ```
 curl http://localhost:8000/getIndicatorInfos > indicators.json
 ```
