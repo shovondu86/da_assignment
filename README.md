@@ -11,11 +11,12 @@ This repository holds source code for the abovementioned assignment. This applic
 
 ### Installation:
 * Clone the repo to your pc <br />
-  ```git clone https://github.com/shovondu86/da_assignment```
-* Change directory path using and create a Python virtual environment <br />
 ```
-cd /da_assignment
-python3 -m venv my_env
+git clone https://github.com/shovondu86/da_assignment
+```
+* Change directory path using and create a Python virtual environment
+```
+cd da_assignment/ && python3 -m venv my_env
 ```
 * Activate the newly created virtual environment and install the required libraries 
 ```
@@ -46,7 +47,7 @@ curl http://localhost:8000/diseaseListInfos
 ```
 curl -L -F "file=@[input_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
 ```
-example
+example: Data case upload and analysis
 ```
 curl -L -F "file=@data_cases_2.csv" http://localhost:8000/datacasesload > indicators.json
 ```
@@ -58,12 +59,14 @@ View the result
 ```
 curl http://localhost:8000/getIndicatorInfos
 ```
-To use the advanced indicators
-```
-curl  http://localhost:8000/getAdvIndicatorInfos > indicators_advanced.json
-```
-#### Corrupted data handling:
 To handle corrupt data use the exsiting method
 ```
 curl -L -F "file=@[input_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
 ```
+
+To use the advanced indicators
+```
+curl  http://localhost:8000/getAdvIndicatorInfos > indicators_advanced.json
+```
+
+
