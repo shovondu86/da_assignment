@@ -23,7 +23,7 @@ cd da_assignment/ && python3 -m venv my_env
 source my_env/bin/activate
 pip install -r requirments.txt
 ```
-* Run the application in the CLI environment
+* Run the application in the CLI environment (port use 8000)
 ```
 python run.py
 ```
