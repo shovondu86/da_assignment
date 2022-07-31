@@ -33,7 +33,7 @@ python run.py
 Open the another terminal 
 #### Disease list processing:
 ```
-curl -L -F "file=@[input_disease_CSV_file]" http://localhost:8000/diseaselistload > [output_name].json
+curl -L -F "file=@[input_disease_CSV_file]" http://localhost:8000/diseaselistload
 ```
 example
 ```
