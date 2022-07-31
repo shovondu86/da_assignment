@@ -44,7 +44,7 @@ curl http://localhost:8000/diseaseListInfos
 ```
 #### Data case processing and analysis:
 ```
-curl -L -F "file=@[data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
+curl -L -F "file=@[input_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
 ```
 example
 ```
@@ -65,5 +65,5 @@ curl  http://localhost:8000/getAdvIndicatorInfos > indicators_advanced.json
 #### Corrupted data handling:
 To handle corrupt data use the exsiting method
 ```
-curl -L -F "file=@[data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
+curl -L -F "file=@[input_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
 ```
