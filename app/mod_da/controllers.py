@@ -1,3 +1,7 @@
+__author__ = "Mohiuddin Shovon"
+__date__ = "30 th July,2022"
+__email__ = "shovon.du86@gmail.com"
+
 # Import flask dependencies
 import os
 from flask import Blueprint, request, g, session, redirect, url_for , abort, jsonify, g, url_for,make_response
