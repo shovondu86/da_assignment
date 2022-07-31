@@ -74,7 +74,7 @@ For pig
 ```
 curl  http://localhost:8000/getAdvIndicatorInfos?species=pig
 ```
-Others species are same way 
+Others species are same way like
 buffalo,
 chicken,
 dog,
