@@ -1,5 +1,9 @@
-from app import db
+#author= "Mohiuddin Shovon"
+#date = "30 th July,2022"
+#email = "shovon.du86@gmail.com"
 
+from app import db
+#Disease List model
 class DiseaseList(db.Model):
     __tablename__ = 'disease_list'
     id = db.Column(db.Integer, primary_key = True)
@@ -7,7 +11,7 @@ class DiseaseList(db.Model):
 
     def as_dict(self):
         return {c.name: str(getattr(self, c.name)) for c in self.__table__.columns}  
-
+#Data Cases model
 class DataCases(db.Model):
     __tablename__ = 'data_cases'
     uuid = db.Column(db.String(36), primary_key = True)
