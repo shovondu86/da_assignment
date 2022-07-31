@@ -32,9 +32,9 @@ python run.py
 ### Data processing:
 Open the another terminal 
 #### Disease list processing:
-```
-curl -L -F "file=@[input_disease_CSV_file]" http://localhost:8000/diseaselistload
-```
+
+`curl -L -F "file=@[input_disease_CSV_file]" http://localhost:8000/diseaselistload`
+
 example
 ```
 curl -L -F "file=@disease_list.csv" http://localhost:8000/diseaselistload 
@@ -42,9 +42,9 @@ curl -L -F "file=@disease_list.csv" http://localhost:8000/diseaselistload
 
 #### Data case processing and analysis:
 ### Total number of reported cases and total number of deaths reported at each location
-```
-curl -L -F "file=@[input_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
-```
+
+`curl -L -F "file=@[input_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json`
+
 example
 ```
 curl -L -F "file=@data_cases_2.csv" http://localhost:8000/datacasesload > indicators.json
@@ -58,9 +58,9 @@ View the result
 curl http://localhost:8000/getIndicatorInfos
 ```
 To handle corrupt data use the exsiting method
-```
-curl -L -F "file=@[input_corrupt_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json
-```
+
+`curl -L -F "file=@[input_corrupt_data_cases_CSV_file]" http://localhost:8000/datacasesload > [output_name].json`
+
 
 ### To use the advanced indicators
 Average number of sick for cat (defualt) from villages and total number of deaths from each disease 
